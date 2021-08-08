@@ -8,6 +8,7 @@ import javax.sql.DataSource;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -20,15 +21,31 @@ public class Database {
 	private static Class<Database> classObject = Database.class;
 	private static Logger log = LogManager.getLogger(classObject);
 	
+	@Value("${spring.datasource.url}")
+    private static String databaseUrl;
+	
+	@Value("${spring.datasource.username}")
+    private static String databaseUsername;
+	
+	@Value("${spring.datasource.password}")
+    private static String databasePassword;
 	
 	// Create connection object
 	public static DataSource getDataSource(){
 		BasicDataSource dataSource = new BasicDataSource();
 
 		dataSource.setDriverClassName("org.postgresql.Driver");
+		
+		/*
 		dataSource.setUrl("jdbc:postgresql://ec2-54-205-232-84.compute-1.amazonaws.com:5432/db63vf3jfeths5");
 		dataSource.setUsername("lqcaqpncnrxnvx");
 		dataSource.setPassword("74a980d3022140ce349e0d8b99b5e50c3976f70fb74200e5a4c385913265ca2c");
+		*/
+		
+		dataSource.setUrl(databaseUrl);
+		dataSource.setUsername(databaseUsername);
+		dataSource.setPassword(databasePassword);
+		
 		dataSource.setConnectionProperties("useUnicode=yes;characterEncoding=utf8;");
 
 		return dataSource;
