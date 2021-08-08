@@ -21,34 +21,6 @@ public class Database {
 	private static Class<Database> classObject = Database.class;
 	private static Logger log = LogManager.getLogger(classObject);
 	
-	@Value("${spring.datasource.url}")
-    private String databaseUrl;
-	
-	@Value("${spring.datasource.username}")
-    private String databaseUsername;
-	
-	@Value("${spring.datasource.password}")
-    private String databasePassword;
-	
-    private static String DATABASE_URL;
-    private static String DATABASE_USERNAME;
-    private static String DATABASE_PASSWORD;
-    
-    @Value("${spring.datasource.url}")
-    public void setDatabaseUrlStatic(String databaseUrl){
-    	Database.DATABASE_URL = databaseUrl;
-    }
-    
-    @Value("${spring.datasource.username}")
-    public void setDatabaseUsernameStatic(String databaseUsername){
-    	Database.DATABASE_USERNAME = databaseUsername;
-    }
-    
-    @Value("${spring.datasource.password}")
-    public void setDatabasePasswordStatic(String databasePassword){
-    	Database.DATABASE_PASSWORD = databasePassword;
-    }
-	
 	// Create connection object
 	public static DataSource getDataSource(){
 		BasicDataSource dataSource = new BasicDataSource();
@@ -61,9 +33,9 @@ public class Database {
 		dataSource.setPassword("74a980d3022140ce349e0d8b99b5e50c3976f70fb74200e5a4c385913265ca2c");
 		*/
 		
-		dataSource.setUrl(DATABASE_URL);
-		dataSource.setUsername(DATABASE_USERNAME);
-		dataSource.setPassword(DATABASE_PASSWORD);
+		dataSource.setUrl(DatabaseUtils.DATABASE_URL);
+		dataSource.setUsername(DatabaseUtils.DATABASE_USERNAME);
+		dataSource.setPassword(DatabaseUtils.DATABASE_PASSWORD);
 		
 		dataSource.setConnectionProperties("useUnicode=yes;characterEncoding=utf8;");
 
