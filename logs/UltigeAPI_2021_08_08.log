@@ -1,0 +1,31 @@
+2021-08-08 23:13:20.848 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - Starting TimelineApiApplication using Java 11.0.9 on TEKURO with PID 10160 (D:\AlgoProg\Howelandco\TimelineAPI\target\classes started by jowen in D:\AlgoProg\Howelandco\TimelineAPI)
+2021-08-08 23:13:20.860 [main] DEBUG com.doublebox.timelineapi.TimelineApiApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-08 23:13:20.861 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - No active profile set, falling back to default profiles: default
+2021-08-08 23:13:23.330 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - Started TimelineApiApplication in 3.08 seconds (JVM running for 4.0)
+2021-08-08 23:13:23.338 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - --------------------------------
+2021-08-08 23:13:23.338 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - Program Up and Running
+2021-08-08 23:13:23.338 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - --------------------------------
+2021-08-08 23:13:36.805 [http-nio-8080-exec-1] INFO  com.doublebox.timelineapi.TimelineApiApplication - Welcome to Timeline API server! Today is 2021-08-08T23:13:32.568+0700
+2021-08-08 23:14:24.142 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - Starting TimelineApiApplication using Java 11.0.9 on TEKURO with PID 27580 (D:\AlgoProg\Howelandco\TimelineAPI\target\classes started by jowen in D:\AlgoProg\Howelandco\TimelineAPI)
+2021-08-08 23:14:24.152 [main] DEBUG com.doublebox.timelineapi.TimelineApiApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-08 23:14:24.153 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - No active profile set, falling back to default profiles: default
+2021-08-08 23:14:26.317 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - Started TimelineApiApplication in 2.714 seconds (JVM running for 3.596)
+2021-08-08 23:14:26.322 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - --------------------------------
+2021-08-08 23:14:26.322 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - Program Up and Running
+2021-08-08 23:14:26.322 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - --------------------------------
+2021-08-08 23:14:41.085 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - Starting TimelineApiApplication using Java 11.0.9 on TEKURO with PID 12656 (D:\AlgoProg\Howelandco\TimelineAPI\target\classes started by jowen in D:\AlgoProg\Howelandco\TimelineAPI)
+2021-08-08 23:14:41.097 [main] DEBUG com.doublebox.timelineapi.TimelineApiApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-08 23:14:41.098 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - No active profile set, falling back to default profiles: default
+2021-08-08 23:14:43.349 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - Started TimelineApiApplication in 2.864 seconds (JVM running for 3.882)
+2021-08-08 23:14:43.353 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - --------------------------------
+2021-08-08 23:14:43.354 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - Program Up and Running
+2021-08-08 23:14:43.354 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - --------------------------------
+2021-08-08 23:16:23.552 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - Starting TimelineApiApplication using Java 11.0.9 on TEKURO with PID 28924 (D:\AlgoProg\Howelandco\TimelineAPI\target\classes started by jowen in D:\AlgoProg\Howelandco\TimelineAPI)
+2021-08-08 23:16:23.572 [main] DEBUG com.doublebox.timelineapi.TimelineApiApplication - Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-08 23:16:23.574 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - No active profile set, falling back to default profiles: default
+2021-08-08 23:16:26.006 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - Started TimelineApiApplication in 3.043 seconds (JVM running for 4.087)
+2021-08-08 23:16:26.013 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - --------------------------------
+2021-08-08 23:16:26.013 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - Program Up and Running
+2021-08-08 23:16:26.014 [main] INFO  com.doublebox.timelineapi.TimelineApiApplication - --------------------------------
+2021-08-08 23:16:38.783 [http-nio-8080-exec-1] INFO  com.doublebox.timelineapi.TimelineApiApplication - Welcome to Timeline API server! Today is 2021-08-08T23:16:34.524+0700
+2021-08-08 23:16:49.331 [http-nio-8080-exec-2] INFO  com.doublebox.timelineapi.TimelineApiApplication - Welcome to Timeline API server! Today is 2021-08-08T23:16:45.463+0700
