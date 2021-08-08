@@ -9,7 +9,7 @@
       		<PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss.SSS}{GMT+7} [%t] %-5level %logger{36} - %msg%n"/>
     	</Console>
     	
-    	<RollingFile name="RollingFile" fileName="${baseDir}/UltigeAPI_${filePattern}.log" 
+    	<RollingFile name="RollingFile" fileName="${baseDir}/TimelineAPI_${filePattern}.log" 
     		filePattern="${baseDir}/TimelineAPI-%d{yyyy-MM-dd}.log">
 		 	<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS}{GMT+7} [%t] %-5level %logger{36} - %msg%n"/>
 			<CronTriggeringPolicy schedule="0 0 0 * * ?"/>
