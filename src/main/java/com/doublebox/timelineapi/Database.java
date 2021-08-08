@@ -21,21 +21,24 @@ public class Database {
 	private static Class<Database> classObject = Database.class;
 	private static Logger log = LogManager.getLogger(classObject);
 	
+	private static Boolean devMode = false;
+	
 	// Create connection object
 	public static DataSource getDataSource(){
 		BasicDataSource dataSource = new BasicDataSource();
 
 		dataSource.setDriverClassName("org.postgresql.Driver");
 		
-		/*
-		dataSource.setUrl("jdbc:postgresql://ec2-54-205-232-84.compute-1.amazonaws.com:5432/db63vf3jfeths5");
-		dataSource.setUsername("lqcaqpncnrxnvx");
-		dataSource.setPassword("74a980d3022140ce349e0d8b99b5e50c3976f70fb74200e5a4c385913265ca2c");
-		*/
-		
-		dataSource.setUrl(DatabaseUtils.DATABASE_URL);
-		dataSource.setUsername(DatabaseUtils.DATABASE_USERNAME);
-		dataSource.setPassword(DatabaseUtils.DATABASE_PASSWORD);
+		if (devMode == true) {
+			dataSource.setUrl("jdbc:postgresql://ec2-54-205-232-84.compute-1.amazonaws.com:5432/db63vf3jfeths5");
+			dataSource.setUsername("lqcaqpncnrxnvx");
+			dataSource.setPassword("74a980d3022140ce349e0d8b99b5e50c3976f70fb74200e5a4c385913265ca2c");
+		}
+		else {
+			dataSource.setUrl(DatabaseUtils.DATABASE_URL);
+			dataSource.setUsername(DatabaseUtils.DATABASE_USERNAME);
+			dataSource.setPassword(DatabaseUtils.DATABASE_PASSWORD);
+		}
 		
 		dataSource.setConnectionProperties("useUnicode=yes;characterEncoding=utf8;");
 
